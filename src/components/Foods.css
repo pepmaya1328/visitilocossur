@@ -1,0 +1,14 @@
+.header {
+    padding-top: 5rem;
+}
+
+.card {
+    width: 22rem;
+    margin: 10px 0px;
+}
+
+.button {
+    float: inline-start;
+    text-decoration: none;
+}
+

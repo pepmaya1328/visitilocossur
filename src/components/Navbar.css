@@ -1,0 +1,128 @@
+/* .active {
+    background-color: #1d4cd8;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22bebe;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* height: 60px; */
+    /* width: 100%; */
+    padding: 0 90px;
+    /* max-width: 1200px; */
+}
+
+nav .title {
+    /* width: 80px;
+    padding: 0 6px;
+    display: flex;
+    justify-self: flex-start;
+    cursor: pointer;
+    align-items: center;
+    white-space: nowrap; */
+    padding: 0;
+    font-family: 'Lobster Two';
+    font-weight: bolder;
+    font-style: italic;
+    white-space: nowrap;
+
+    font-size: 1.8rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    font-weight: 500;
+
+    /* width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 25rem;
+    font-weight: 500; */
+}
+
+nav ul li {
+    list-style: none;
+    /* text-align: center; */
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(active):hover {
+    background-color: #172554;
+}
+
+ nav .menu {
+    display: none;
+    position: absolute;
+    /* background-color: #22bebe; */
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    z-index: 1;
+ }
+
+ nav .menu span {
+    height: 0.2rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+ }
+
+ @media (max-width: 640px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+        /* flex-direction: column;
+        justify-content: center;
+        background: #81cece;
+        position: absolute;
+        width: 100%;
+        top: 75px;
+        padding: 12px 40px 24px 40px; */
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+ }
